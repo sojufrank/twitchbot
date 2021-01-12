@@ -1,5 +1,8 @@
+require('dotenv').config()
 const tmi = require('tmi.js')
 const fetch = require('node-fetch')
+
+
 
 //test globals
 let monsterCurrentHitPointsValue = 20
@@ -16,7 +19,7 @@ const model = {
         },
         identity: {
             username: 'sojupotato',
-            password: 'oauth:r7nxsnwoe33opddjxhjavn65hk9ex3'
+            password: process.env.API_KEY
         },
         channels: ['sojustream']
     },
@@ -175,7 +178,7 @@ const gameController = {
         this.round = 1
         this.players = []
         this.monsters = []
-        
+
         const a = 1
         const b = 2
         this.soju = a+b
