@@ -34,7 +34,7 @@ const model = {
         donation: 'https://streamlabs.com/sojustream/tip',
     },
     userQuotes: {
-        soju: 'soju loves you <3',
+        soju: 'Soju loves you <3',
         memez: 'We believe in Memez!',
         harb: 'harb loves you <3',
         nel: '!cybor xD',
